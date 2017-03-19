@@ -1,15 +1,8 @@
 #include <unit_test/unit_test.h>
 
-#include <errno.h>
-#include <fcntl.h>
-#include <float.h>
-#include <math.h>
 #include <px4_config.h>
-#include <stdint.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/types.h>
-#include <unistd.h>
+#include <cfloat>
+#include "matrix/math.hpp"
 
 typedef union {
 	float f;

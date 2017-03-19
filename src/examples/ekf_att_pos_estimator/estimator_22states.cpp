@@ -37,16 +37,10 @@
  * @author Lorenz Meier <lorenz@px4.io>
  */
 
-#include <px4_defines.h>
 #include "estimator_22states.h"
-#include <string.h>
-#include <stdio.h>
-#include <stdarg.h>
-#include <cmath>
 
-#ifndef M_PI_F
-#define M_PI_F static_cast<float>(M_PI)
-#endif
+#include <px4_defines.h>
+#include "matrix/math.hpp"
 
 #define MIN_AIRSPEED_MEAS 5.0f
 

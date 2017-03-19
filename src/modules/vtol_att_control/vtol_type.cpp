@@ -40,10 +40,11 @@
 */
 
 #include "vtol_type.h"
-#include "drivers/drv_pwm_output.h"
-#include <px4_defines.h>
-#include <float.h>
 #include "vtol_att_control_main.h"
+
+#include <cfloat>
+#include <px4_defines.h>
+#include <matrix/math.hpp>
 
 VtolType::VtolType(VtolAttitudeControl *att_controller) :
 	_attc(att_controller),
